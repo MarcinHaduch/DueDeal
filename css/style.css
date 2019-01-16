@@ -628,7 +628,7 @@ body {
   color: #f7f7f7; }
   .footer__logo-box {
     text-align: center;
-    margin-bottom: 8rem; }
+    display: inline-block; }
   .footer__logo {
     width: 25rem;
     height: auto; }
@@ -641,7 +641,7 @@ body {
   .footer__item {
     display: inline-block; }
     .footer__item:not(:last-child) {
-      margin-right: 1.5rem; }
+      margin-right: .5rem; }
   .footer__link:link, .footer__link:visited {
     color: #f7f7f7;
     background-color: #333;

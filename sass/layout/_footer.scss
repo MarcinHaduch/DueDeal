@@ -6,12 +6,13 @@
 
     &__logo-box {
         text-align: center;
-        margin-bottom: 8rem;
+        display: inline-block;
     }
 
     &__logo {
         width: 25rem;
         height: auto;
+        
     }
     &__navigation {
         border-top: 1px solid $color-grey-dark;
@@ -24,7 +25,7 @@
     &__item {
         display: inline-block;
         &:not(:last-child){
-            margin-right: 1.5rem;
+            margin-right: .5rem;
         }
     }
     &__link {
