@@ -238,8 +238,11 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
-.form__group:not(:last-child) {
+.form__group {
   margin-bottom: 2rem; }
+
+.form__group:nth-child(4) {
+  margin-bottom: 2.8rem; }
 
 .form__input {
   font-size: 1.5rem;
@@ -275,45 +278,12 @@ body {
   visibility: hidden;
   transform: translateY(-4rem); }
 
-.form__radio-group {
-  width: 49%;
-  display: inline-block; }
+.form__heading {
+  font-size: 2.3rem; }
 
-.form__radio-input {
-  visibility: hidden;
-  display: none; }
-
-.form__radio-label {
-  font-size: 1.6rem;
-  cursor: pointer;
-  position: relative;
-  padding-left: 2.5rem; }
-
-.form__radio-button {
-  height: 2rem;
-  width: 2rem;
-  border: 3px solid #d8ae76;
-  border-radius: 50%;
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  top: 0; }
-  .form__radio-button::after {
-    content: "";
-    display: block;
-    height: 1rem;
-    width: 1rem;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #d8ae76;
-    opacity: 0;
-    transition: opacity .2s; }
-
-.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
-  opacity: 1; }
+.form__phone:link, .form__phone:visited {
+  text-decoration: none;
+  color: #000; }
 
 .story {
   width: 75%;
@@ -390,7 +360,7 @@ body {
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
 
 .navigation__nav {
-  height: 20vh;
+  height: 100vh;
   width: 100%;
   position: fixed;
   top: 0;
@@ -410,8 +380,7 @@ body {
   width: 100%; }
 
 .navigation__item {
-  margin: 1rem;
-  display: inline-block; }
+  margin: 1rem; }
 
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
@@ -422,7 +391,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
-  background-size: 220%;
+  background-size: 240%;
   transition: all .4s; }
   .navigation__link:link span, .navigation__link:visited span {
     margin-right: 1.5rem;
@@ -475,14 +444,14 @@ body {
 
 .footer {
   background-color: #333;
-  padding: 10rem 0;
+  padding: 2rem 0;
   font-size: 1.4rem;
   color: #f7f7f7; }
   .footer__logo-box {
     text-align: center;
     display: inline-block; }
   .footer__logo {
-    width: 25rem;
+    width: 6rem;
     height: auto; }
   .footer__navigation {
     border-top: 1px solid #777;
@@ -510,6 +479,9 @@ body {
     padding-top: 2rem;
     width: 80%;
     float: right; }
+  .footer__phone {
+    text-decoration: none;
+    color: #f7f7f7; }
 
 .row {
   max-width: 114rem;
