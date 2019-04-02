@@ -444,15 +444,16 @@ body {
 
 .footer {
   background-color: #333;
-  padding: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   font-size: 1.4rem;
   color: #f7f7f7; }
   .footer__logo-box {
-    text-align: center;
-    display: inline-block; }
+    text-align: center; }
   .footer__logo {
-    width: 6rem;
-    height: auto; }
+    width: 25rem;
+    height: auto;
+    margin: 0 auto; }
   .footer__navigation {
     border-top: 1px solid #777;
     padding-top: 2rem;

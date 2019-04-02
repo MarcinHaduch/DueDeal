@@ -1,17 +1,18 @@
 .footer {
     background-color: $color-grey-dark-3;
-    padding: 2rem 0;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     font-size: 1.4rem;
     color: $color-grey-light-1;
 
     &__logo-box {
         text-align: center;
-        display: inline-block;
     }
 
     &__logo {
-        width: 6rem;
+        width: 25rem;
         height: auto;
+        margin: 0 auto;
     }
     &__navigation {
         border-top: 1px solid $color-grey-dark;
