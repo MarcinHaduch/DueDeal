@@ -54,7 +54,7 @@
      }
      
      &--animated {
-        animation: moveInBottom .5s ease-out 2s;
+        animation: moveInBottom .5s ease-out 0.5s;
         animation-fill-mode: backwards;
      }
      &--green{
