@@ -14,7 +14,7 @@
         <title>Duedeal | Odzyskiwanie należności</title>
     </head>
     <body>
-        <div class="navigaton">
+        <!-- <div class="navigaton">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
             <label for="navi-toggle" class="navigation__button">
                 <span class="navigation__icon">&nbsp;</span>
@@ -28,7 +28,18 @@
                     <li class="navigation__item"><a href="#contact" class="navigation__link">Umów się teraz</a></li>
                 </ul>
             </nav>
-        </div>
+        </div> -->
+        <div class="nav-toggle">
+            <div class="nav-toggle-bar"></div>
+          </div>
+          <nav class="nav">
+            <ul>
+                    <li class="navigation__item"><a href="#about-us" class="navigation__link">O nas</a></li>
+                    <li class="navigation__item"><a href="#our-mission" class="navigation__link">Nasza misja</a></li>
+                    <li class="navigation__item"><a href="#how-do-we-work" class="navigation__link">Jak działamy</a></li>
+                    <li class="navigation__item"><a href="#contact" class="navigation__link">Umów się teraz</a></li>
+            </ul>
+          </nav>
         <header class="header">
             <div class="header__logo-box">
                 <img src="img/logo-white.png" alt="Logo" class="header__logo">
@@ -62,12 +73,18 @@
 
                            
                         </div>
-                        <div class="col-1-of-2">
-                            <div class="composition">
+                        <div class="col-1-of-2 section-about__second">
+                            <!-- <div class="composition">
                                 <img src="img/nat-1-large.jpg" alt="Photo 1 " class="composition__photo composition__photo--p1">
                                 <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
                                 <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
-                            </div>
+                            </div> -->
+                            <h3 class="heading-tertiary u-margin-bottom-small">W naszej pracy kładziemy szczególny nacisk na:</h3>
+                            <ul class="section-about__list">
+                                <li class="section-about__item">- jasne i uczciwe zasady współpracy</li>
+                                <li class="section-about__item">- szybkość działania</li>
+                                <li class="section-about__item">- interes i dobro Klienta</li>
+                            </ul>
                         </div>
                     </div>
             </section>
@@ -87,7 +104,7 @@
                             <i class="feature-box__icon icon-basic-world"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">KOMPLEKSOWO</h3>
                             <p class="feature-box__text">
-                                Przejmujemy kontakt z dłużnikami. Prowadzimy sprawy nawet od etapu zawarcia umowy, negocjacji, przez mediacje, postępowania sądowe, egzekucyjne, aż po etap długofalowej strategii poszukiwania majątku dłużnika.
+                                Przejmujemy kontakt z dłużnikami. Prowadzimy sprawy nawet od etapu zawarcia umowy, negocjacji, przez mediacje, postępowania sądowe, egzekucyjne, aż po etap.
                             </p>
                         </div>
                     </div>
@@ -96,7 +113,7 @@
                             <i class="feature-box__icon icon-basic-exclamation"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">BEZ ZALICZEK</h3>
                             <p class="feature-box__text">
-                                Pobieramy wynagrodzenie tylko za konkretne efekty działań. Brak zaliczek wstępnych. Brak ukrytych kosztów.
+                                Pobieramy wynagrodzenie tylko za konkretne efekty działań. Brak zaliczek wstępnych. Brak ukrytych kosztów.   Brak ukrytych kosztów.  Brak ukrytych kosztów.
                             </p>
                         </div>
                     </div>
@@ -227,6 +244,26 @@
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+        
         <script src="js/scroll.js"></script>
+        <script>
+            (function() {
+
+var hamburger = {
+  navToggle: document.querySelector('.nav-toggle'),
+  nav: document.querySelector('nav'),
+
+  doToggle: function(e) {
+    e.preventDefault();
+    this.navToggle.classList.toggle('expanded');
+    this.nav.classList.toggle('expanded');
+  }
+};
+
+hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
+hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
+
+}());
+        </script>
     </body>
 </html>

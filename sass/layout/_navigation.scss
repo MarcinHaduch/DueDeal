@@ -6,8 +6,8 @@
 
     &__button {
         background-color: $color-white;
-        height: 7rem;
-        width: 7rem;
+        height: 3.5rem;
+        width: 3.5rem;
         position: fixed;
         top: 6rem;
         right: 6rem;
@@ -33,7 +33,7 @@
     }
 
     &__nav {
-        height: 100vh;
+        height: 10vh;
         width: 100%;
         position: fixed;
         top: 0;
@@ -62,7 +62,7 @@
         &:link,
         &:visited {
             display:inline-block;
-            font-size: 3rem;
+            font-size: 1.7rem;
             font-weight: 300;
             padding: 1rem 2rem;
             color: $color-white;
@@ -92,7 +92,7 @@
 
     //Functionality
     &__checkbox:checked ~ &__background {
-     transform: scale(80);
+     transform: scale(1);
     }
     &__checkbox:checked ~ &__nav {
         opacity: 1;
@@ -103,12 +103,12 @@
     //ICON
     &__icon{
         position: relative;
-        margin-top: 3.5rem;
+        margin-top: 1.725rem;
         &,
         &::before,
         &::after {
-            width: 3rem;
-            height: 2px;
+            width: 2rem;
+            height: 1px;
             background-color: $color-grey-dark-3;
             display: inline-block;
         }
@@ -120,17 +120,17 @@
             transition: all .2s ease-in;
         }
         &::before {
-            top: -.8rem;
+            top: -.4rem;
         }
         &::after {
-            top: .8rem;
+            top: .4rem;
         }
     }
     &__button:hover &__icon::before{
-        top: -1rem;
+        top: -0.5rem;
     }
     &__button:hover &__icon::after  {
-        top: 1rem;
+        top: 0.5rem;
     }
 
     &__checkbox:checked + &__button &__icon {
@@ -148,3 +148,95 @@
   
    
 }
+.nav {
+    -webkit-transition: left 0.5s ease;
+    -moz-transition: left 0.5s ease;
+    -ms-transition: left 0.5s ease;
+    -o-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    height: 100vh;
+    left: -23rem;
+    padding: 6rem 2rem 2rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 23rem;
+    z-index: 1;
+  }
+  
+  .nav.expanded { left: 0; }
+  
+  .nav ul {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-toggle {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    height: 2rem;
+    left: 2rem;
+    position: fixed;
+    top: 2rem;
+    width: 3.6rem;
+    z-index: 2;
+  }
+  
+  .nav-toggle:hover { opacity: 0.8; }
+  
+  .nav-toggle .nav-toggle-bar,  .nav-toggle .nav-toggle-bar::after,  .nav-toggle .nav-toggle-bar::before {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: white;
+    
+    content: '';
+    height: 0.4rem;
+    width: 100%;
+    
+    
+  }
+  
+  .nav-toggle .nav-toggle-bar { margin-top: 0; 
+    box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.7);
+}
+  
+  .nav-toggle .nav-toggle-bar::after { margin-top: 0.8rem; }
+  
+  .nav-toggle .nav-toggle-bar::before { margin-top: -0.8rem; }
+  
+  .nav-toggle.expanded .nav-toggle-bar { background: transparent; }
+  
+  .nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
+    background: white;
+    margin-top: 0;
+  }
+  
+  .nav-toggle.expanded .nav-toggle-bar::after {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .nav-toggle.expanded .nav-toggle-bar::before {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
