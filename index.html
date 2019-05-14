@@ -61,68 +61,65 @@
                     </h2>
                 </div>
                 <div class="row">
-                        <div class="col-1-of-2">
+                        <div class="col-1-of-2 section-about">
                             <h3 class="heading-tertiary u-margin-bottom-small">Kim jesteśmy?</h3>
                             <p class="paragraph">
                                 DueDeal tworzą sumienni i wiarygodni specjaliści z wieloletnim doświadczeniem w branży. Jako zespół jesteśmy nastawieni na wzmocnienie pozycji gospodarczej naszych Klientów, w szczególności poprzez kompleksową obsługę windykacji należności, a także wsparcie procesów tworzenia, negocjowania i wykonywania kontraktów handlowych. 
                             </p>
+                        </div>
+                        <div class="col-1-of-2 section-about">
                             <h3 class="heading-tertiary u-margin-bottom-small">Nasza misja</h3>
                             <p class="paragraph">
-                                Naszą misją jest kreowanie wysokich standardów postępowania w zakresie wzajemnych kontaktów pomiędzy przedsiębiorcami. Swoimi działaniami chcemy wpływać na kształtowanie postaw wzajemnego poszanowania stron w ramach kontaktów handlowych. 
+                                Naszą misją jest kreowanie wysokich standardów postępowania w zakresie wzajemnych kontaktów pomiędzy przedsiębiorcami. Swoimi działaniami chcemy wpływać na kształtowanie postaw wzajemnego poszanowania stron w ramach kontaktów handlowych. Kładziemy szczególny nacisk na jasne i uczciwe zasady współpracy, szybkość działania oraz interes i dobro klienta.
                             </p>
-
-                           
-                        </div>
-                        <div class="col-1-of-2 section-about__second">
-                            <!-- <div class="composition">
-                                <img src="img/nat-1-large.jpg" alt="Photo 1 " class="composition__photo composition__photo--p1">
-                                <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                                <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
-                            </div> -->
-                            <h3 class="heading-tertiary u-margin-bottom-small">W naszej pracy kładziemy szczególny nacisk na:</h3>
-                            <ul class="section-about__list">
-                                <li class="section-about__item">- jasne i uczciwe zasady współpracy</li>
-                                <li class="section-about__item">- szybkość działania</li>
-                                <li class="section-about__item">- interes i dobro Klienta</li>
-                            </ul>
                         </div>
                     </div>
             </section>
             <section class="section-features" id="our-mission">
-                <div class="row">
-                    <div class="col-1-of-4">
+                <div class="row max-width-150">
+                    <div class="col-1-of-5">
                         <div class="feature-box">
                             <i class="feature-box__icon icon-basic-todolist-pen"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">RZETELNIE</h3>
                             <p class="feature-box__text">
-                                Nasza praca to zawsze jasne i uczciwe zasady działania. Stawiamy na partnerskie relacje i dostępność dla Klientów, z którymi budujemy długotrwałe relacje. 
+                                Nasza praca to zawsze jasne i uczciwe zasady działania. Stawiamy na partnerstwo i dostępność dla Klientów, z którymi budujemy długotrwałą współpracę. 
                             </p>
                         </div>
                     </div>
-                    <div class="col-1-of-4">
+                    <div class="col-1-of-5">
                         <div class="feature-box">
                             <i class="feature-box__icon icon-basic-world"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">KOMPLEKSOWO</h3>
                             <p class="feature-box__text">
-                                Przejmujemy kontakt z dłużnikami. Prowadzimy sprawy nawet od etapu zawarcia umowy, negocjacji, przez mediacje, postępowania sądowe, egzekucyjne, aż po etap.
+                                Pobieramy wynagrodzenie tylko za konkretne efekty działań. Brak zaliczek wstępnych. Brak ukrytych opłat. Jasne zasady współpracy. 
                             </p>
                         </div>
                     </div>
-                    <div class="col-1-of-4">
+                    <div class="col-1-of-5">
                         <div class="feature-box">
                             <i class="feature-box__icon icon-basic-exclamation"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">BEZ ZALICZEK</h3>
                             <p class="feature-box__text">
-                                Pobieramy wynagrodzenie tylko za konkretne efekty działań. Brak zaliczek wstępnych. Brak ukrytych kosztów.   Brak ukrytych kosztów.  Brak ukrytych kosztów.
+                                Bezpłatnie gromadzimy niezbędną dokumentację każdej sprawy celem dokonania analizy gospodarczo-finansowej konkretnego zlecenia.
+
                             </p>
                         </div>
                     </div>
-                    <div class="col-1-of-4">
+                    <div class="col-1-of-5">
                         <div class="feature-box">
                             <i class="feature-box__icon icon-basic-clockwise"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">SZYBKO</h3>
                             <p class="feature-box__text">
                                 Działania wykonujemy niezwłocznie. Na rozpoczęcie niezbędnych procesów sądowych lub egzekucyjnych potrzebujemy kilka dni roboczych.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-5">
+                        <div class="feature-box">
+                            <i class="feature-box__icon icon-basic-clockwise"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">BEZPŁATNA ANALIZA</h3>
+                            <p class="feature-box__text">
+                                Bezpłatnie gromadzimy niezbędną dokumentację każdej sprawy celem dokonania analizy gospodarczo-finansowej konkretnego zlecenia.
                             </p>
                         </div>
                     </div>
@@ -257,11 +254,20 @@ var hamburger = {
     e.preventDefault();
     this.navToggle.classList.toggle('expanded');
     this.nav.classList.toggle('expanded');
+  },
+  doRemove: function(e) {
+    hamburger.navToggle.classList.remove('expanded');
+    hamburger.nav.classList.remove('expanded');
   }
 };
 
 hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
 hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
+window.addEventListener('mouseup', function (e){
+    if(e.target!=hamburger.nav && event.target!=hamburger.navToggle){
+        hamburger.doRemove(e);
+    };
+})
 
 }());
         </script>

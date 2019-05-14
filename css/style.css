@@ -102,6 +102,9 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem; }
 
+.max-width-150 {
+  max-width: 150rem !important; }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -427,7 +430,7 @@ body {
   font-size: 2rem;
   height: 100vh;
   left: -23rem;
-  padding: 6rem 2rem 2rem 2rem;
+  padding: 6rem 2rem 2rem 0rem;
   position: fixed;
   top: 0;
   width: 23rem;
@@ -525,7 +528,7 @@ body {
   .footer__item {
     display: inline-block; }
     .footer__item:not(:last-child) {
-      margin-right: .5rem; }
+      margin-right: .85rem; }
   .footer__link:link, .footer__link:visited {
     color: #f7f7f7;
     background-color: #333;
@@ -536,7 +539,7 @@ body {
   .footer__link:hover, .footer__link:active {
     color: #d8ae76;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-    transform: scale(1.2); }
+    transform: scale(1.1); }
   .footer__copyright {
     border-top: 1px solid #777;
     padding-top: 2rem;
@@ -567,6 +570,8 @@ body {
     width: calc((2 * (100% - 2 * 6rem) / 3) + 6rem); }
   .row .col-1-of-4 {
     width: calc(((100% - 3 * 6rem) / 4)); }
+  .row .col-1-of-5 {
+    width: calc(((100% - 4 * 6rem) / 5)); }
 
 .header {
   height: 95vh;
@@ -591,17 +596,13 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 35rem 0;
+  padding-top: 35rem;
+  padding-bottom: 20rem;
   margin-top: -30vh; }
   .section-about__second {
     padding-top: 8rem;
     font-weight: 500;
     font-size: 1.7rem; }
-  .section-about__list {
-    list-style: none;
-    margin-left: 2.7rem; }
-  .section-about__item:not(:last-child) {
-    margin-bottom: 1.5rem; }
 
 .section-features {
   padding: 20rem 0;
@@ -628,9 +629,9 @@ body {
   background-image: linear-gradient(to right bottom, #eec896, #9b7038); }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/umow1.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/umow3.jpg);
   background-size: cover;
-  background-position: right;
+  background-position: bottom;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
   height: 50rem; }

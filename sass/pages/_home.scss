@@ -1,6 +1,7 @@
 .section-about {
     background-color: $color-grey-light-1;
-    padding: 35rem 0;
+    padding-top: 35rem;
+    padding-bottom:20rem;
     margin-top:-30vh;
     &__second{
         padding-top: 8rem;
@@ -8,15 +9,7 @@
         font-size: 1.7rem;
     }
     
-     &__list{
-         list-style: none;
-         margin-left: 2.7rem;
-        
-     }
-    
-     &__item:not(:last-child){
-        margin-bottom: 1.5rem;
-    }
+     
 }
 .section-features {
     padding: 20rem 0;
@@ -60,10 +53,10 @@
                     rgba($color-white,.9) 0%,
                     rgba($color-white,.9) 50%,
                    transparent 50%),
-                    url(../img/umow1.jpg);
+                    url(../img/umow3.jpg);
                     
     background-size: cover;
-    background-position: right;
+    background-position: bottom;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
 
