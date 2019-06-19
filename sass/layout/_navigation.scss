@@ -149,17 +149,17 @@
    
 }
 .nav {
-    -webkit-transition: left 0.5s ease;
-    -moz-transition: left 0.5s ease;
-    -ms-transition: left 0.5s ease;
-    -o-transition: left 0.5s ease;
-    transition: left 0.5s ease;
+    -webkit-transition: right 0.5s ease;
+    -moz-transition: right 0.5s ease;
+    -ms-transition: right 0.5s ease;
+    -o-transition: right 0.5s ease;
+    transition: right 0.5s ease;
     background: #333;
     color: white;
     cursor: pointer;
     font-size: 2rem;
     height: 100vh;
-    left: -23rem;
+    right: -23rem;
     padding: 6rem 2rem 2rem 0rem;
     
     position: fixed;
@@ -168,7 +168,7 @@
     z-index: 1;
   }
   
-  .nav.expanded { left: 0; }
+  .nav.expanded { right: 0; }
   
   .nav ul {
     position: absolute;
@@ -186,7 +186,7 @@
     user-select: none;
     cursor: pointer;
     height: 2rem;
-    left: 2rem;
+    right: 2rem;
     position: fixed;
     top: 2rem;
     width: 3.6rem;
